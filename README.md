@@ -1,151 +1,154 @@
-::: {align="center"}
+<div align="center">
 
-STM32 MPU6050 PCB Design
+# STM32 MPU6050 PCB
 
-Custom Embedded Hardware Design using Altium Designer
+**Custom Embedded Hardware Design using Altium Designer**
 
-<img src="https://img.shields.io/badge/Altium%20Designer-PCB%20Design-A5915F?style=for-the-badge&logo=altiumdesigner&logoColor=white"/>{=html}
-<img src="https://img.shields.io/badge/STM32-Microcontroller-03234B?style=for-the-badge"/>{=html}
-<img src="https://img.shields.io/badge/MPU6050-6--Axis%20IMU-00897B?style=for-the-badge"/>{=html}
-<img src="https://img.shields.io/badge/PCB-4%20Layer-1565C0?style=for-the-badge"/>{=html}
-:::
+A four-layer PCB integrating an STM32 microcontroller and an MPU6050 six-axis motion sensor.
 
-Project Overview
+<img src="https://img.shields.io/badge/EDA-ALTIUM%20DESIGNER-A5915F?style=for-the-badge&logo=altiumdesigner&logoColor=white" />
+<img src="https://img.shields.io/badge/MCU-STM32-03234B?style=for-the-badge" />
+<img src="https://img.shields.io/badge/SENSOR-MPU6050-00897B?style=for-the-badge" />
+<img src="https://img.shields.io/badge/PCB-4%20LAYER-3155A6?style=for-the-badge" />
 
-This project involves the design and development of a custom four-layer
-PCB integrating an STM32 microcontroller with an MPU6050 six-axis motion
-sensor.
+<br>
 
-The PCB is designed using Altium Designer, focusing on component
-integration, signal routing, power distribution, grounding architecture
-and compact PCB layout.
+<img src="images/3d_image.png" width="82%" alt="STM32 MPU6050 PCB 3D View" />
 
-The MPU6050 combines a three-axis accelerometer and a three-axis
-gyroscope, enabling motion sensing and orientation measurement
-applications.
+<br>
 
-3D PCB Visualization
+<img src="https://img.shields.io/badge/PROJECT-STM32%20MPU6050-303030?style=flat-square" />
+<img src="https://img.shields.io/badge/DESIGN-ALTIUM-3155A6?style=flat-square" />
+<img src="https://img.shields.io/badge/STATUS-DESIGNED-2E7D32?style=flat-square" />
 
-::: {align="center"}
-<img src="images/3d.png" width="85%" alt="3D PCB View"/>{=html}
+</div>
 
-PCB 3D View
+---
 
-<img src="images/3d_image.png" width="85%" alt="3D PCB Render"/>{=html}
+## Project Overview
 
-PCB 3D Render
-:::
+This project covers the schematic and PCB design of a custom STM32-based board incorporating the MPU6050 inertial measurement unit (IMU).
 
-PCB Layout
+The MPU6050 combines a three-axis accelerometer and a three-axis gyroscope. It communicates with the microcontroller through the I2C interface and can be used in motion sensing, orientation measurement and embedded control applications.
 
-::: {align="center"}
-<img src="images/pcb_layout.png" width="95%" alt="PCB Layout"/>{=html}
+The board was designed in Altium Designer using a four-layer PCB stack-up.
 
-Four-Layer PCB Layout
-:::
+---
 
-Circuit Schematic
+## PCB Design Gallery
 
-::: {align="center"}
-<img src="images/pcb_schematic.png" width="95%" alt="Circuit Schematic"/>{=html}
+<div align="center">
 
-STM32 MPU6050 Circuit Schematic
-:::
+### 3D PCB View
 
-Hardware Specifications
+<img src="images/3d.png" width="82%" alt="STM32 MPU6050 PCB 3D View" />
 
-Parameter          Specification
+### Additional 3D View
 
-Microcontroller    STM32
-Motion Sensor      MPU6050
-Sensor Interface   I2C
-Accelerometer      3-Axis
-Gyroscope          3-Axis
-PCB Architecture   4-Layer
-Design Software    Altium Designer
+<img src="images/3d_image.png" width="82%" alt="STM32 MPU6050 PCB Render" />
 
-PCB Layer Stackup
+### PCB Layout
 
-Layer   Configuration
+<img src="images/pcb_layout.png" width="95%" alt="STM32 MPU6050 PCB Layout" />
 
-L1      Top Signal Layer
-L2      Ground Plane
-L3      Ground Plane
-L4      Bottom Signal Layer
+### Circuit Schematic
 
-The multilayer architecture provides dedicated internal ground reference
-layers and separate signal routing layers.
+<img src="images/pcb_schematic.png" width="95%" alt="STM32 MPU6050 Circuit Schematic" />
 
-Key Design Features
+</div>
 
-STM32 microcontroller integration.
+---
 
-MPU6050 six-axis motion sensor integration.
+## Hardware Specifications
 
-I2C-based sensor communication.
+| Parameter | Description |
+|:--|:--|
+| Microcontroller | STM32 |
+| Motion Sensor | MPU6050 |
+| Sensor Type | 6-axis IMU |
+| Accelerometer | 3-axis |
+| Gyroscope | 3-axis |
+| Communication Interface | I2C |
+| PCB Architecture | 4-layer |
+| Design Software | Altium Designer |
 
-Four-layer PCB architecture.
+---
 
-Dedicated internal ground layers.
+## PCB Layer Stack-up
 
-Component placement and signal routing.
+| Layer | Function |
+|:--|:--|
+| L1 | Top Signal Layer |
+| L2 | Ground Plane |
+| L3 | Ground Plane |
+| L4 | Bottom Signal Layer |
 
-Custom connector and interface arrangement.
+---
 
-3D PCB modelling and visualization.
+## Design Highlights
 
-Design Tools
+- STM32 microcontroller integration.
+- MPU6050 accelerometer and gyroscope integration.
+- I2C interface for sensor communication.
+- Four-layer PCB stack-up.
+- Dedicated internal ground layers.
+- Component placement and signal routing.
+- Custom connector and interface arrangement.
+- 3D PCB visualisation using Altium Designer.
 
-::: {align="center"}
-<img src="https://img.shields.io/badge/Altium%20Designer-PCB%20Design-A5915F?style=flat-square&logo=altiumdesigner&logoColor=white"/>{=html}
-<img src="https://img.shields.io/badge/STM32-Embedded%20Controller-03234B?style=flat-square"/>{=html}
-<img src="https://img.shields.io/badge/MPU6050-Motion%20Sensing-00897B?style=flat-square"/>{=html}
-:::
+---
 
-Repository Structure
+## Design Tools
 
-stm32_mpu6050_pcb/
-│
-├── images/
-│   ├── 3d.png
-│   ├── 3d_image.png
-│   ├── pcb_layout.png
-│   └── pcb_schematic.png
-│
-├── Components - 01.11.26 - 12.54/
-│
-├── AltiumSTM32_PCB.PrjPcb
-├── AltiumSTM32_PCB.PcbDoc
-├── AltiumSTM32_Schematic.SchDoc
-├── .gitignore
-└── README.md
+<div align="center">
 
-Potential Applications
+<img src="https://img.shields.io/badge/ALTIUM%20DESIGNER-PCB%20AND%20SCHEMATIC-A5915F?style=for-the-badge&logo=altiumdesigner&logoColor=white" />
+<img src="https://img.shields.io/badge/STM32-MICROCONTROLLER-03234B?style=for-the-badge" />
+<img src="https://img.shields.io/badge/MPU6050-IMU%20SENSOR-00897B?style=for-the-badge" />
 
-Motion tracking systems.
+</div>
 
-Orientation and tilt measurement.
+---
 
-Inertial measurement applications.
+## Repository Contents
 
-Robotics and embedded control systems.
+| File / Folder | Description |
+|:--|:--|
+| `AltiumSTM32_PCB.PrjPcb` | Main Altium project |
+| `AltiumSTM32_PCB.PcbDoc` | PCB layout document |
+| `AltiumSTM32_Schematic.SchDoc` | Circuit schematic |
+| `Components - 01.11.26 - 12.54/` | Project component libraries |
+| `images/` | PCB renders, layout and schematic images |
 
-Sensor-based electronic applications.
+---
 
-Author
+## Applications
 
-Ratnakar Sahoo
+- Motion tracking.
+- Orientation and tilt measurement.
+- Inertial measurement systems.
+- Robotics and embedded control.
+- Sensor-based electronic systems.
 
-Electronics and Telecommunication Engineering
+---
+
+## Author
+
+**Ratnakar Sahoo**
+
+Electronics and Telecommunication Engineering  
 Veer Surendra Sai University of Technology (VSSUT), Odisha
 
-GitHub Profile
+[GitHub Profile](https://github.com/RatnakarSahooVSSUT)
 
-Project
-Repository
+[Project Repository](https://github.com/RatnakarSahooVSSUT/stm32_mpu6050_pcb)
 
-::: {align="center"}
-STM32 | MPU6050 | Embedded Hardware | PCB Design
+---
+
+<div align="center">
+
+**STM32 | MPU6050 | Embedded Hardware | PCB Design**
 
 Designed using Altium Designer.
-:::
+
+</div>
