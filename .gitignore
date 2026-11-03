@@ -1,0 +1,11 @@
+History/
+Project Logs*/
+Project Outputs*/
+*.PrjPcbStructure
+*.bak
+*.tmp
+*.log
+*.dmp
+*.zip
+Thumbs.db
+.DS_Store
